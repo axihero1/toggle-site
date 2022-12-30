@@ -1,0 +1,139 @@
+@media(max-width: 1280px){
+    .content{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .content-box{
+        width: 80%;
+        margin: 15px auto;
+    }
+    .option,.icon,.my-profil{
+        width:210px;
+        margin: auto;
+    }
+    .icon h2{
+        margin-right: -10px;
+    }
+
+    .my-profil img{
+        margin-left: -10px;
+    }
+    .fixed .img{
+        width: 235px;
+    }
+    .right{
+        width: 170px;
+    }
+    .fixed .icon{
+        width: 200px;
+        text-align: center;
+    }
+}
+@media(max-width: 1120px) {
+    .content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        margin: 70px auto;
+    }
+    .content-box{
+        width: 70%;
+    }
+    .option,.icon,.my-profil{
+        width:180px;
+        margin: auto;
+    }
+    .dash-head{
+        width: 200px;
+    }
+    .dashbar-box{
+        width: 200px;
+    }
+    .fixed .img{
+        width: 220px;
+    }  
+    .listing{
+        display: grid;
+        grid-template-columns: repeat(1fr,1);
+    }  
+    .listing-cont{
+        width: 100%;
+        font-size: 20px;
+        margin-top: 40px;
+    }
+    /* .daliy{
+        display: grid;
+        grid-template-columns: repeat(1fr,1);
+    } */
+    /* .listing-cont{
+        width: 205%;
+        margin: 40px auto;
+    } */
+
+}
+@media(max-width: 960px){
+    .fixed{
+        right: 0px;
+    }
+    section{
+        width: 100%;
+    }
+    .content-box{
+        width: 90%;
+    }
+    .option,.icon,.my-profil{
+        width:220px;
+        margin: auto;
+    }
+    .dash-head{
+        width: 250px;
+        margin-left: 15px;
+    }
+    .dashbar-box{
+        width: 250px;
+        margin-left: 15px;
+    }
+    .fixed .img{
+        width: 280px;
+    } 
+    .fixed{
+        width: 280px;
+    }
+    .nav-left i {
+        display: none;
+    }
+    .desna{
+        opacity: 1;
+    }
+    .div1{
+        opacity: 0;
+    }
+    .nav-right{
+        width: 200px;
+    }
+
+}
+@media(max-width:790px){
+    .glabal{
+        display: grid;
+        grid-template-columns: repeat(1fr,1);
+    }
+    .global-left{
+        width: 100%;
+    }
+    .glabal-right{
+        width: 100%;
+    }
+    
+}
+@media(max-width:595px) {
+    .content-box{
+        width: 90%;
+    }
+    .content{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+/* app.js finished */

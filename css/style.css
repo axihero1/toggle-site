@@ -1,0 +1,644 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid black; */
+}
+
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    /* position: fixed; */
+    overflow: hidden;
+}
+
+.fixed {
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    background-color: black;
+    overflow-y: scroll;
+    color: white;
+    transition: .7s;
+}
+
+
+
+.fixed .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(28%);
+    width: 300px;
+    object-fit: cover;
+    height: 100vh;
+    z-index: 1;
+}
+
+.fixed .icon {
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.relitive {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: 3;
+}
+
+.relitive .icon h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.relitive .icon i {
+    font-size: 22px;
+}
+
+.right {
+    width: 235px;
+    margin: auto;
+    height: 1px;
+    background-color: rgb(178, 170, 170);
+    margin-top: 20px;
+}
+
+.profil {
+    /* border: 1px solid white; */
+    height: 90px;
+    overflow: hidden;
+    transition: .8s;
+    /* margin: auto; */
+    margin-bottom: -20px;
+    margin-left: 15px;
+}
+
+.my-profil {
+    width: 200px;
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 18px;
+    user-select: none;
+}
+
+.my-profil #open {
+    padding: 5px;
+    transition: .6s;
+}
+
+.my-profil img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.option {
+    text-align: start;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    line-height: 43px;
+}
+
+.aside-dashbar, .aside-dashbarTwo, .aside-dashbarThree, .aside-dashbarFor {
+    height: 60px;
+    overflow: hidden;
+    transition: .7s;
+}
+
+.aside-dashbar #openOne {
+    transition: .7s;
+}
+
+#openTwo, #openThree, #openFor {
+    transition: .7s;
+}
+
+.dash-head {
+    width: 220px;
+    display: flex;
+    margin: auto;
+    font-size: 20px;
+    padding: 15px 20px;
+    background-color: RGB(71, 172, 194);
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.dash-head i {
+    margin-right: 45px;
+}
+
+.dashbar-box {
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    margin: auto;
+    font-size: 20px;
+    padding: 20px;
+    user-select: none;
+}
+
+.nosee-box {
+    width: 220px;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    transition: .4s;
+}
+
+.nosee-box:hover {
+    background-color: rgb(157, 136, 136);
+}
+
+.nosee-box:focus {
+    background-color: RGB(71, 172, 194);
+}
+
+.nosee-box p {
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.dashnav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.desna {
+    font-size: 24px;
+    opacity: 0;
+    transition: .7s;
+}
+
+.nav-left {
+    width: 200px;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-left i {
+    padding: 20px;
+    background-color: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -5px;
+}
+
+.z-index {
+    position: relative;
+    z-index: 1;
+    width: 200px;
+    transition: .7s;
+
+}
+
+.index {
+    position: absolute;
+    z-index: 2;
+    padding: 100px;
+    transition: .7s;
+}
+
+.nav-right {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-right i {
+    margin: 0 5px;
+}
+
+.nav-right input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(208, 192, 192);
+    outline: none;
+    background-color: RGB(238, 238, 238);
+    padding: 10px;
+}
+
+.nav-right .glas {
+    padding: 15px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+
+.content-box {
+    width: 23%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.sped {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.sped i {
+    font-size: 36px;
+    color: white;
+    padding: 28px;
+    background-color: RGB(243, 147, 61);
+    border-radius: 8px;
+    position: relative;
+    bottom: 40px;
+    box-shadow: 3px 2px 8px rgb(155, 140, 140);
+}
+
+.sped .green {
+    background-color: RGB(80, 173, 87);
+}
+
+.sped .red {
+    background-color: RGB(231, 61, 58);
+}
+
+.sped .blue {
+    background-color: RGB(79, 191, 211);
+}
+
+.sped h2 {
+    font-weight: 100;
+    font-size: 26px;
+    color: rgb(90, 77, 77);
+}
+
+.sped p {
+    color: rgb(126, 104, 104);
+}
+
+
+
+
+
+
+section {
+    width: 80%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: RGB(238, 238, 238);
+    padding: 10px 25px;
+    transition: .7s;
+}
+
+.right1 {
+    width: 90%;
+    margin: auto;
+    height: 1px;
+    background-color: rgb(152, 133, 133);
+}
+
+.content-box .footer {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    margin-top: 8px;
+    width: 120px;
+    justify-content: space-between;
+}
+
+.content-box .footer i {
+    color: red;
+}
+
+.glabal {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    margin-top: 60px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.global-left {
+    width: 50%;
+    height: auto;
+    padding: 10px 20px 20px 20px;
+}
+
+.glabal-left-head {
+    display: flex;
+    align-items: flex-start;
+    width: 65%;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.glabal-left-head i {
+    padding: 25px;
+    font-size: 22px;
+    color: white;
+    background-color: RGB(76, 168, 81);
+    border-radius: 5px;
+    position: relative;
+    bottom: 35px;
+}
+
+.hr {
+    margin-top: -25px;
+}
+
+hr {
+    color: red;
+}
+
+.galabal-box {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.local-box {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+}
+
+.local-box img {
+    width: 35px;
+}
+
+.glabal-right {
+    width: 50%;
+    height: auto;
+    padding: 40px;
+}
+
+.glabal-right img {
+    width: 100%;
+    height: 100%;
+}
+/* .daliy{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+} */
+/* .daliy-cont{
+    width: 32%;
+    height: auto;
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+} */
+.daliy-box{
+    width: 94%;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 30px;
+    transition: all 300ms;
+    border-radius: 8px;
+}
+
+.div{
+    display: flex;
+    margin: 15px 0;
+}
+.daliy-mali{
+    margin-top: -58px;
+}
+.daliy-text{
+    margin-top: 15px;
+}
+.daliy-text .p{
+    font-size: 22px;
+    display: flex;
+}
+.dali{
+    margin-top: 50px;
+}
+
+
+
+
+.sarlavha {
+    margin: 30px 0 50px;
+    font-size: 28px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.listing-cont {
+    width: 32%;
+    background-color: white;
+    text-align: center;
+    border-radius: 8px;
+    padding: 15px;
+}
+.listing-cont:hover .image{
+    bottom: 80px;
+}
+
+.listing-cont:hover .listing-img {
+    bottom: 90px;
+}
+
+.listing-img {
+    width: auto;
+    height: auto;
+    position: relative;
+    bottom: 20px;
+    transition: all 300ms;
+}
+.listing-icon i{
+    margin: 5px 10px;
+}
+
+.listing-img img {
+    border-radius: 7px;
+    width: 100%;
+}
+
+.top {
+    margin-top: -50px;
+}
+
+.listining-text {
+    margin-top: 20px;
+}
+
+.head-text {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.listining-text span {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.listining-text p {
+    color: rgb(93, 76, 76);
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.listing{
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 85px;
+    padding-bottom: 20px;
+}
+footer nav a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: black;
+    font-size: 15px;
+}
+
+.setting-icon i{
+    padding: 15px 40px 15px 20px;
+    background-color: RGB(166, 166, 166);
+    position: fixed;
+    top: 200px;
+    font-size: 30px;
+    right: -10px;
+    color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.setting-board{
+    width: 340px;
+    height: 550px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 4px 9px black;
+    padding: 15px;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    display: none;
+}
+.set-color{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.box-color{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: RGB(157, 59, 176);
+    transition: .3s;
+}
+.box-color:hover{
+    transform: scale(1.2);
+}
+.bluee{
+    background-color: RGB(78, 188, 212);
+}
+.gren{
+    background-color: RGB(80, 175, 80);
+}
+.red{
+    background-color: RGB(237, 65, 52);
+}
+.yellow{
+    background-color: RGB(243, 152, 62);
+}
+.white{
+    background-color: RGB(244, 244, 244);
+}
+.nomalum{
+    background-color: RGB(234, 60, 100);
+}
+.small{
+    width: 220px;
+    margin: auto;
+}
+.black{
+    background-color: black;
+}
+.bac-color{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.bac-img img{
+    width: 45px;
+    height: 100px;
+    border-radius: 5px;
+}
+.bac-img{
+    width: 200px;
+    margin: 10px auto;
+}
+.anime{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.bac-gif{
+    background-image: url("../img/gif1.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 32%;
+    height: 100px;
+    border-radius: 50%;
+}
+.set-button{
+    width: 100%;
+
+}
+.set-button button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    margin-bottom: 10px;
+}
+.btn1{
+    background-color: RGB(243, 152, 62);
+}
+.btn2{
+    background-color: RGB(71, 172, 194);
+}
+

@@ -1,0 +1,79 @@
+/* app.js css start*/
+
+/* aside start */
+.profil1{
+    height: 220px;
+}
+.openHead{
+    transform: rotate(180deg);
+}
+.nosee1{
+    height: 485px;
+}
+.openOne1{
+    transform: rotate(180deg);
+}
+.asideDashbarTwo1{
+    height: 485px;
+}
+.openTwo1{
+    transform: rotate(180deg);
+}
+.openThree1{
+    transform: rotate(180deg);
+}
+.asideDashbarThree1{
+    height: 485px;
+}
+.asideDashbarFor1{
+    height: 485px;
+}
+.openFor1{
+    transform: rotate(180deg);
+}
+.fixed33{
+    position: absolute;
+    right: 0;
+    z-index: 1111;
+}
+
+.sectionBlur{
+    filter: brightness(28%);
+}
+.res{
+    font-size: 36px;
+    color: red;
+}
+.desna1{
+    position: relative;
+    z-index: 222;
+    right: 300px;
+}
+/* aside finished */
+.section1{
+    width: 95%;
+}
+.z-index1{
+    z-index: 2;
+}
+.z-index11{
+    z-index: 1;
+}
+.fixed1{
+    width: 5%;
+}
+.fixed11{
+    width: 20%;
+}
+.nav1{
+    z-index: 1;
+}
+.nav11{
+    z-index: 2;
+}
+.section11{
+    width: 80%;
+}
+.settingBoard1{
+    display: block;
+}
