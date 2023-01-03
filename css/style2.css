@@ -54,22 +54,17 @@
     }  
     .listing{
         display: grid;
-        grid-template-columns: repeat(1fr,1);
+        grid-template-columns: repeat(auto);
+        justify-content: center;
+        min-width: 100%;
     }  
     .listing-cont{
-        width: 100%;
+        max-width: 100vh;
+        min-width: 50vh;
+
         font-size: 20px;
         margin-top: 40px;
     }
-    /* .daliy{
-        display: grid;
-        grid-template-columns: repeat(1fr,1);
-    } */
-    /* .listing-cont{
-        width: 205%;
-        margin: 40px auto;
-    } */
-
 }
 @media(max-width: 960px){
     .fixed{

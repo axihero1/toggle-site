@@ -79,33 +79,11 @@ let setting = document.querySelector(".setting-icon")
 setting.addEventListener("click" , () => {
     settingBoard.classList.toggle("settingBoard1")
 })
-// let bac1 = document.querySelector("#bac1")
-// let bac2 = document.querySelector("#bac2")
-// let bac3 = document.querySelector("#bac3")
-// let bac4 = document.querySelector("#bac4")
-// bac1.addEventListener("click" , () => {
-//     fixed.style.backgroundImage = "url(`./img`)"
-// })
 
-// let closeIcon = document.createElement("h1")
-// let iconBox = document.querySelector(".icon-box")
-// closeIcon.setAttribute("class", "fa-solid fa-bars")
-// closeIcon.innerHTML="salom"
-// iconBox.appendChild("closeIcon")
-
-
-// if (fixed.style.width == `20%`) {
-//     fixed.style.cssText = `width: 5% ; `;
-//     section.style.cssText = `width: 95%`;
-//     nav.style.cssText = `z-index:1; backgroundColor: red;`;
-//     zIndex.style.cssText = `z-index:2;`;
-//   } else {
-//     fixed.style.cssText = `width: 20% ;`;
-//     section.style.cssText = `width: 80%;`;
-// nav.style.cssText = `z-index: 2;`;
-//   zIndex.style.cssText = `z-index: 1;`;
-//   fixed.style.cssText = `width: 20% ;`;
-//   section.style.cssText = `width: 80%;`;
-//   }
-
-
+let headImg = document.querySelector(".replaceImg")
+let replaceImgs = document.querySelectorAll(".bac1")
+replaceImgs.forEach(element => {
+    element.addEventListener("click",() => {
+        headImg.src = element.src 
+    })
+});
